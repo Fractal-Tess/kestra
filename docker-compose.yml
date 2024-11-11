@@ -43,8 +43,8 @@ services:
           server:
             basicAuth:
               enabled: true
-              username: "vgfractal@gmail.com" # it must be a valid email address
-              password: 123123
+              username: "${KESTRA_USERNAME}" # it must be a valid email address
+              password: ${KESTRA_PASSWORD}
           repository:
             type: postgres
           storage:
